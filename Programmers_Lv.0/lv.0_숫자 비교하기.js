@@ -18,8 +18,8 @@ function solution(num1, num2) {
 // function solution(num1, num2) {
 //   const answer = num1 === num2 ? 1 : -1;
 //   return answer;
-// } 
+// }
 
 // let result = condition ? value1 : value2;
 // 조건부 연산자는 위와 같이 사용한다. 평가 대상인 condition이 truthy라면 value1이, 그렇지 않으면(falsy) value2가 반환된다.
-// 물음표 연산자는  비교연산자보다 우선순위가 낮으므로 더 나중에 실행된다.
+// 물음표 연산자는  비교연산자보다 우선순위가 낮으므로 더 나중에 실행된다!
