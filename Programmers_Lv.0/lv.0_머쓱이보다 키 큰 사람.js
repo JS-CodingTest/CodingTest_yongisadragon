@@ -17,7 +17,7 @@ function solution(array, height) {
   return result = array.filter(friends => friends > height).length;                                     
 }
 
-//다른 코드1>
+//다른 코드1 >
 // for ..of와 삼항연산자를 활용한 코드인데, 읽고보니 좋은 코드같다. for of로 배열을 순회하며 나온 i가 height보다 크다면 answer에 1을 더해주고, 아니라면 그대로 둔다. 큰 사람이 1사람 나올때마다 answer에 1을 더해준다는 것이다.
 
 // function solution(array, height) {
