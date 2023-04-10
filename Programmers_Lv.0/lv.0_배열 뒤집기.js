@@ -31,3 +31,13 @@ function solution(num_list) {
 // function solution(num_list) {
 //   return num_list.reverse()
 // }
+
+// 다른 풀이3>
+// 인덱스 자체를 뒤부터 줄이면서 불러오는 반복문. i의 시작은 num_list.length-1로 랭스-1이 마지막 배열 값의 익덱스이기 때문에 이렇게 설정해주고, i>=0이라고 해준다. 처음엔 i>=1이라고 했는데, 그럼 num_list[1]까지 밖에 안불러옴. [0]까지 불러와야 끝까지 불러오는 것임. 인덱스 남바는0 부터 시작하니까 이거 꼭 주의해주자. 그리고 자연스럽게 빈 배열에 num_list[i]를 푸쉬해주면 된다. 이를테면 [1,2,3,4,5] 일때 i는 num_list[4]=5 ~ num_list[0]=1 까지 순서대로 빈 배열에 푸쉬 해줄 것임.
+// function solution(num_list) {
+//   let result=[];
+//   for(let i=num_list.length-1; i>=0; i--){
+//       result.push(num_list[i])
+//   }
+//   return result;
+// }
