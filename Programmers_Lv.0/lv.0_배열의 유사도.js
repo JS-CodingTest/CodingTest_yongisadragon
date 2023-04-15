@@ -26,23 +26,23 @@ function solution(s1, s2) {
 
 // 다른 풀이2>
 // 사실 함수형 프로그래밍 식으로만 풀다보면 정확한 과정을 머릿속으로 그리느라 헷갈릴 때가 많다. 순수하게 for문을 이용해서 각 배열의 길이를 순회했고,그 i 값 중 중복된 값이 있으면 answer 변수에 ++를 해줘서 length를 직접 구했다. 어쩌면 내 수준에 가장 맞다.
-function solution(s1, s2) {
-  let answer = 0;
-  for (let i = 0; i < s1.length; i++) {
-    for (let j = 0; j < s2.length; j++) {
-      if (s1[i] === s2[j]) answer++;
-    }
-  }
-  return answer;
-}
+// function solution(s1, s2) {
+//   let answer = 0;
+//   for (let i = 0; i < s1.length; i++) {
+//     for (let j = 0; j < s2.length; j++) {
+//       if (s1[i] === s2[j]) answer++;
+//     }
+//   }
+//   return answer;
+// }
 
 // 이런식으로도..
-function solution(s1, s2) {
-  let answer = 0;
-  for (let i of s1) {
-    for (let j of s2) {
-      if (i === j) answer++;
-    }
-  }
-  return answer;
-}
+// function solution(s1, s2) {
+//   let answer = 0;
+//   for (let i of s1) {
+//     for (let j of s2) {
+//       if (i === j) answer++;
+//     }
+//   }
+//   return answer;
+// }
