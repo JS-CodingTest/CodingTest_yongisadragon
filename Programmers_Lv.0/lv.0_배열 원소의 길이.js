@@ -27,3 +27,4 @@ function solution(strlist) {
 // function solution(strlist) {
 //   return strlist.reduce((a, b) => [...a, b.length], [])
 // }
+// 해당 풀이는 스크린샷(배열원소의길이.1,2)으로 설명..
