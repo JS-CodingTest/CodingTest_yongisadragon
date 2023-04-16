@@ -21,7 +21,6 @@ function solution(numbers) {
 // }
 
 // 만약 원본 배열을 변경하지 않고 정렬된 새로운 배열을 얻고 싶다면, slice() 메소드를 사용하여 복사본을 만들고, 이를 정렬하면 됨.
-
 // const numbers = [3, 1, 4, 2, 5];
 // const sortedNumbers = numbers.slice().sort(function(a, b) {
 //   return a - b;
