@@ -28,3 +28,5 @@ function solution(strlist) {
 //   return strlist.reduce((a, b) => [...a, b.length], [])
 // }
 // 해당 풀이는 스크린샷(배열원소의길이.1,2)으로 설명..
+// 1. [링크](https://github.com/JS-CodingTest/CodingTest_yongisadragon/blob/main/Programmers_Lv.0/%EB%B0%B0%EC%97%B4%EC%9B%90%EC%86%8C%EC%9D%98%EA%B8%B8%EC%9D%B4.1.png)
+// 2. [링크](https://github.com/JS-CodingTest/CodingTest_yongisadragon/blob/main/Programmers_Lv.0/%EB%B0%B0%EC%97%B4%EC%9B%90%EC%86%8C%EC%9D%98%EA%B8%B8%EC%9D%B4.2.png)
