@@ -33,3 +33,18 @@ function solution(order) {
 //     .split("")
 //     .filter((n) => ["3", "6", "9"].includes(n)).length;
 // }
+
+//풀이 추가> 정규표현식
+function solution(order) {
+  return order.toString().replace(/[^369]/g, "").length;
+}
+
+//혹은
+function solution(order) {
+  return (order.toString().match(/[369]/g) ?? []).length;
+}
+
+//혹은 split 응용, split을 할 대상을 찾고나면 -1 을 해줘야 그 대상의 갯수를 구할 수 있다.
+function solution(order) {
+  return ("" + order).split(/[369]/).length - 1;
+}
