@@ -6,9 +6,9 @@
 // 1 ≤ my_string의 길이 ≤ 1,000
 
 //처음시도는 괜찮게 가다가 런타임 에러가 뜬다. 아마 match가 배열로 바꾸는 중간 과정에서 'ae'와 같은 my_string이 있어서 null이 뜨는경우 join을 해도 null이 되는 것 같다. 없으면 빈 문자열이 나오게 해줘야할 필요가 있었다.
-function solution(my_string) {
-  return my_string.match(/[^aeiou]/g).join("");
-}
+// function solution(my_string) {
+//   return my_string.match(/[^aeiou]/g).join("");
+// }
 //그래서 한번 널리시로 걸러주고 조인해줬더니 해결되었다.
 function solution(my_string) {
   let one = my_string.match(/[^aeiou]/g) ?? [];
@@ -22,9 +22,9 @@ function solution(my_string) {
 
 //다른 풀이1>
 //이 경우도 흥미로웠다. 배열화 해주고, 필터로 배열 중 aeiou아닌것을 포함하는지를 includes를 한뒤 join해줬다. 배열중에 모음이 아닌애들을 includes해주면 t/f로 반환해주고, 만족하는 애들을 filter가 걸러서 배열로 반환해주기때문에, join으로 마무리하면 된다.
-function solution(my_string) {
-  return my_string
-    .split("")
-    .filter((t) => !["a", "e", "i", "o", "u"].includes(t))
-    .join("");
-}
+// function solution(my_string) {
+//   return my_string
+//     .split("")
+//     .filter((t) => !["a", "e", "i", "o", "u"].includes(t))
+//     .join("");
+// }
