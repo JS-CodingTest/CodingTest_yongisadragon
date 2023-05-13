@@ -17,16 +17,17 @@ function solution(strlist) {
 
 // function solution(strlist) {
 //   var answer = [];
-//   strlist.forEach(el=>answer.push(el.length))
+//   strlist.forEach((el) => answer.push(el.length));
 //   return answer;
 // }
 
-//다른 풀이2>
-//조건 . ["We", "are", "the", "world!"] -> [2, 3, 3, 6]
-// reduce를 이용해서 초깃값 빈배열에 a를 전개시킨 것으로 시작해서..이건 공부가 필요
+// 다른 풀이2>
+// 조건 . ["We", "are", "the", "world!"] -> [2, 3, 3, 6]
+
 // function solution(strlist) {
-//   return strlist.reduce((a, b) => [...a, b.length], [])
+//   return strlist.reduce((a, b) => [...a, b.length], []);
 // }
+
 // 해당 풀이는 스크린샷(배열원소의길이.1,2)으로 설명.
 //1. https://github.com/JS-CodingTest/CodingTest_yongisadragon/blob/main/Programmers_Lv.0/%EB%B0%B0%EC%97%B4%EC%9B%90%EC%86%8C%EC%9D%98%EA%B8%B8%EC%9D%B4.1.png
 //2. https://github.com/JS-CodingTest/CodingTest_yongisadragon/blob/main/Programmers_Lv.0/%EB%B0%B0%EC%97%B4%EC%9B%90%EC%86%8C%EC%9D%98%EA%B8%B8%EC%9D%B4.2.png

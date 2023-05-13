@@ -17,6 +17,6 @@ function solution(numbers) {
 // const solution = (numbers) => numbers.map((number) => number * 2)
 
 // 다른풀이 2. reduce로 풀이한건데, reduce는 조금 이해가 덜 돼서, 게다가 전개 구문까지.. 차근차근 더 알아 보기로..
-// function solution(numbers) {
-//   return numbers.reduce((a, b) => [...a, b * 2], []);
-// }
+function solution(numbers) {
+  return numbers.reduce((a, b) => [...a, b * 2], []);
+}
