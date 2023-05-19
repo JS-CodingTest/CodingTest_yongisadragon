@@ -37,7 +37,7 @@ function solution(number) {
       for (let k = j + 1; k < length; k++) {
         const sum = number[i] + number[j] + number[k];
         if (sum) continue;
-        answer++;
+        result++;
       }
     }
   }
